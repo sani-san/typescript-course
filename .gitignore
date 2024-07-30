@@ -1,0 +1,74 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Ruby
+*.gem
+*.rbc
+.bundle/
+config/credentials.yml.enc
+coverage/
+spec/reports/
+
+# PHP
+vendor/
+*.log
+*.sql
+*.sqlite
+
+# JavaScript
+dist/
+build/
+*.log
+*.env
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs_analysis.dat
+*.njsproj
+*.sln
+
+# Logs
+*.log
+
+# Environment Files
+.env
+.env.local
+.env.*.local
+
+# Build directories
+build/
+dist/
+out/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Others
+*.bak
+*.tmp
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
