@@ -25,13 +25,13 @@ const App = () => {
   const handleDeleteGoal = (id: number) => {
     setGoals(prev => prev.filter(goal => goal.id !== id));
   }
-  
+
   return (
     <main>
         <Header image={{ src: goalsImg, alt: "Timothy"}}>
           <h1>Your Course Goals</h1>
         </Header>
-        <NewGoal onAddGoal={handleAddGoal} />
+        <NewGoal onAddGoal={handleAddGoal} disabled={goals.length === 6}/>
         <CourseGoalList onDelete={handleDeleteGoal} goals={goals} />
     </main>
   );

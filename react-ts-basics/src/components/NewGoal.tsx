@@ -2,9 +2,10 @@ import { type FormEvent, type FC, useRef } from "react";
 
 interface Props {
     onAddGoal: (title: string, description: string) => void;
+    disabled: boolean;
 }
 
-const NewGoal: FC<Props> = ({ onAddGoal }) => {
+const NewGoal: FC<Props> = ({ onAddGoal, disabled }) => {
     const goal = useRef<HTMLInputElement>(null);
     const summary = useRef<HTMLInputElement>(null);
 
@@ -17,6 +18,8 @@ const NewGoal: FC<Props> = ({ onAddGoal }) => {
         event.currentTarget.reset();
         onAddGoal(enteredGoal, eneteredSummary);
     }
+    
+    if (disabled) return <></>
 
     return (
         <form onSubmit={handleSubmit}>
