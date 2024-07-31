@@ -7,8 +7,6 @@ interface Props {
     children: ReactNode;
 }
 
-//type Props = PropsWithChildren<{ title: string }>;
-
 const CourseGoal: FC<Props> = ({title, id, onDelete, children}) => {
     return (
         <article>
